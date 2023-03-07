@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memahami Effects</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#kotak").fadeOut("slow", function () {
+                $("#kotak").remove;
+            });
+        }, 3000);
+    </script>
+    <style type="text/javascript">
+        #kotak {
+            width: 300 px;
+            height: 50 px;
+            background: lightyellow;
+            border: 1 px solid black;
+            padding: 5 px;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="kotak">
+        Perhatikan baik-baik teks ini, karena
+        teks akan hilang dalam hitungan 3 detik
+    </h3>
+</body>
+</html>
